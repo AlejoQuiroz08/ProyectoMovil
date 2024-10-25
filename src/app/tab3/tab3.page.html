@@ -1,132 +1,82 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Alejandro Quiroz
-    </ion-title>
+  <ion-toolbar >
+    <ion-title >Biografía</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
+
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Alejandro Quiroz</ion-title>
+      <ion-title size="large">Biografía</ion-title>
     </ion-toolbar>
   </ion-header>
+
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Alejandro Quiroz</ion-card-title>
-      <ion-card-subtitle>Bibiografía</ion-card-subtitle>
+      <ion-card-title>¿Quién soy?</ion-card-title>
+      <ion-card-subtitle>Alejandro Quiroz</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-      <p>Actualmente me encuentro enfocado en el analisis de datos</p>
+      <p>Actualmente trabajando en mi mismo</p>
     </ion-card-content>
   </ion-card>
-  <ion-label style="font-weight: 600; font-size: 1.5rem;">Experiencia Laboral</ion-label>
-  <ion-card color="medium">
+
+  <ion-card color="light">
     <ion-card-header>
-      <ion-card-title>Estudiante de desarrollo de Software</ion-card-title>
-      <ion-card-subtitle>21 años</ion-card-subtitle>
+      <ion-card-title>Acerca de mí</ion-card-title>
+      <ion-card-subtitle>Estudiante de desarrollo de software</ion-card-subtitle>
     </ion-card-header>
-  
-    <ion-card-content>Soy un estudiante de la universidad politecnica nacional, apasioando por la tecnología y el software, vivo en ecuador y tengo 21 años</ion-card-content>
+    <ion-card-content>
+      <ion-text color="dark">Soy un estudiante en la Escuela Politécnica Nacional, apasionado por la tecnología y el desarrollo de software. Vivo en Ecuador y tengo 21 años.</ion-text>
+    </ion-card-content>
   </ion-card>
 
   <ion-list>
     <ion-list-header>
-      <ion-label>Habilidades</ion-label>
+      <ion-label>Hobbies</ion-label>
     </ion-list-header>
     <ion-item>
-      <ion-label>MS Office</ion-label>
+      <ion-icon name="football-outline" slot="start"></ion-icon>
+      <ion-label>Fútbol</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>Nodejs</ion-label>
+      <ion-icon name="barbell-outline" slot="start"></ion-icon>
+      <ion-label>Gimnasio</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>React</ion-label>
+      <ion-icon name="game-controller-outline" slot="start"></ion-icon>
+      <ion-label>Videojuegos</ion-label>
     </ion-item>
-    <ion-item>
-      <ion-label>Express</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>MongoDB</ion-label>
-    </ion-item>
-
-    <ion-list>
-      <ion-list-header>
-        <ion-label>Educación</ion-label>
-      </ion-list-header>
-      <ion-item>
-        <ion-label>
-          <h2>Desarrollo de Software</h2>
-          <p>Escuela Politécnica Nacional - 2022 - Actualmente</p>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-
-    <ion-card color="medium">
-      <ion-card-header>
-        <ion-card-title>Contacto</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-item>
-          <ion-grid>
-            <ion-row>
-              <ion-col size= "3"><ion-fab>
-                <ion-fab-button size = "small">
-                  <ion-icon name="logo-instagram" size= ></ion-icon>
-                </ion-fab-button>
-              </ion-fab></ion-col>
-              <ion-col>
-                <ion-label>alejoquiroz21&#64;gmail.com</ion-label>
-              </ion-col>
-              </ion-row>
-          </ion-grid>
-        </ion-item>
-        <ion-item>
-
-          <ion-grid>
-            <ion-row>
-              <ion-col size= "3"><ion-fab>
-                <ion-fab-button size = "small">
-                  <ion-icon name="logo-facebook" size= ></ion-icon>
-                </ion-fab-button>
-              </ion-fab></ion-col>
-              <ion-col>
-                <ion-label>alejoquiroz21&#64;gmail.com</ion-label>
-              </ion-col>
-              </ion-row>
-          </ion-grid>
-        </ion-item>
-        <ion-item>
-          <ion-grid>
-            <ion-row>
-              <ion-col size= "3"><ion-fab>
-                <ion-fab-button size = "small">
-                  <ion-icon name="logo-whatsapp" size= ></ion-icon>
-                </ion-fab-button>
-              </ion-fab></ion-col>
-              <ion-col>
-                <ion-label>alejoquiroz21&#64;gmail.com</ion-label>
-              </ion-col>
-              </ion-row>
-          </ion-grid>
-        </ion-item>
-        <ion-item>
-          <ion-grid>
-            <ion-row>
-              <ion-col size= "3"><ion-fab>
-                <ion-fab-button size = "small">
-                  <ion-icon name="logo-linkedin" size= ></ion-icon>
-                </ion-fab-button>
-              </ion-fab></ion-col>
-              <ion-col>
-                <ion-label>alejoquiroz21&#64;gmail.com</ion-label>
-              </ion-col>
-              </ion-row>
-          </ion-grid>
-        </ion-item>
-      </ion-card-content>
-    </ion-card>
-
   </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Educación</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        <h2>Desarrollo de Software</h2>
+        <p>Escuela Politécnica Nacional - 2022 - Actualmente</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Contacto</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-icon name="logo-instagram" slot="start"></ion-icon>
+        <ion-label>alejo.quiroz21</ion-label>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-icon name="logo-facebook" slot="start"></ion-icon>
+        <ion-label>Alejandro Quiroz</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

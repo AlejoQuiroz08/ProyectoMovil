@@ -1,20 +1,32 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Calculadora
-    </ion-title>
+    <ion-title>Calcular Días</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="calculator">
-    <ion-item>
-      <ion-input readonly [value]="display"></ion-input>
-    </ion-item>
-    <div class="grid">
-      <ion-button *ngFor="let button of buttons" (click)="buttonClicked(button)">
-        {{ button }}
-      </ion-button>
-    </div>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>Fecha Inicial</ion-label>
+    <ion-datetime
+      display-format="DD/MM/YYYY"
+      [(ngModel)]="inicio"
+      placeholder="Selecciona la fecha inicial">
+    </ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Fecha Final</ion-label>
+    <ion-datetime
+      display-format="DD/MM/YYYY"
+      [(ngModel)]="fin"
+      placeholder="Selecciona la fecha final">
+    </ion-datetime>
+  </ion-item>
+
+  <ion-button expand="full" (click)="calcular()">Calcular Días</ion-button>
+
+  <div *ngIf="diferencia !== null">
+    <p>Días de diferencia: {{ diferencia }}</p>
   </div>
 </ion-content>
+
