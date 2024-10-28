@@ -9,8 +9,6 @@ import { ToastController } from '@ionic/angular';
 })
 export class Tab2Page {
   textContent: string = '';
-  showToast = false;
-  toastMessage: string = '';
 
   constructor(private file: File, private toastController: ToastController) {}
 
@@ -19,18 +17,16 @@ export class Tab2Page {
     const filePath = this.file.dataDirectory;
 
     try {
-      // Crear el archivo y escribir el contenido
       await this.file.writeFile(filePath, fileName, this.textContent, { replace: true });
-      this.showToastMessage('Texto guardado correctamente');
-    } catch (error) {
-      this.showToastMessage('Error al guardar el texto');
-      console.error('Error al guardar el archivo:', error);
+      this.showToast('Texto guardado correctamente');
+    } catch {
+      this.showToast('Error al guardar el texto');
     }
   }
 
-  async showToastMessage(message: string) {
+  async showToast(message: string) {
     const toast = await this.toastController.create({
-      message: message,
+      message,
       duration: 2000,
       color: 'success'
     });

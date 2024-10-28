@@ -5,17 +5,39 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-item>
-    <ion-label position="stacked">Texto a Guardar</ion-label>
-    <ion-textarea [(ngModel)]="textContent" placeholder="Escribe algo..."></ion-textarea>
-  </ion-item>
 
-  <ion-button expand="block" (click)="saveToFile()">Guardar en Archivo</ion-button>
+  <!-- Card para el área de texto -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Escribe tu contenido</ion-card-title>
+      <ion-card-subtitle>Texto que deseas guardar</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-textarea [(ngModel)]="textContent" placeholder="Escribe algo aquí..."></ion-textarea>
+    </ion-card-content>
+  </ion-card>
 
-  <ion-toast
-    *ngIf="showToast"
-    [message]="toastMessage"
-    duration="2000"
-    color="success">
-  </ion-toast>
+  <!-- Botón para guardar el archivo -->
+  <ion-button expand="block" color="primary" (click)="saveToFile()">
+    <ion-icon name="save-outline" slot="start"></ion-icon>
+    Guardar Texto
+  </ion-button>
+
+  <!-- Sección de información adicional -->
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Información de Archivo</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name="document-outline" slot="start"></ion-icon>
+      <ion-label>Nombre del archivo</ion-label>
+      <ion-note slot="end">texto_guardado.txt</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="folder-outline" slot="start"></ion-icon>
+      <ion-label>Directorio</ion-label>
+      <ion-note slot="end">Data Directory</ion-note>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
