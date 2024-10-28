@@ -74,3 +74,10 @@ La última pestaña incluye una foto del desarrollador y un enlace al repositori
 - Node.js
 - Ionic Framework
 
+##APK
+
+-Archivo instalable de la aplicación para Android
+
+-https://drive.google.com/file/d/1aD7EvhAc9SBkBuaxXEqPydWa-qZN7GzD/view?usp=sharing
+
+
