@@ -1,83 +1,13 @@
 # Proyecto Photo Gallery
+Splash Screen e Icono Personalizado
+Al iniciar la aplicación, los usuarios son recibidos con una splash screen diseñada específicamente para esta aplicación, que muestra el logotipo y un fondo que anticipa la experiencia amigable y funcional que ofrece la aplicación. La splash screen también ayuda a que la carga inicial sea más fluida, brindando un tiempo breve pero visualmente agradable mientras la aplicación termina de cargarse.
 
-Este proyecto es una aplicación móvil desarrollada con Ionic que incluye diversas funcionalidades organizadas en cuatro pestañas. A continuación, se detalla cada una de ellas.
+Además, la aplicación cuenta con un icono personalizado diseñado para representar la identidad del proyecto. Este icono es fácilmente reconocible en la pantalla de inicio del dispositivo, resaltando la marca y mejorando la visibilidad entre otras aplicaciones.
 
-## Tabla de Contenidos
+Características del Icono y la Splash Screen:
 
-1. [Tab 1: Datepicker](#tab-1-datepicker)
-2. [Tab 2: Guardar Texto](#tab-2-guardar-texto)
-3. [Tab 3: Biografía](#tab-3-biografía)
-4. [Tab 4: Repositorio](#tab-4-repositorio)
+Splash Screen: Diseño personalizado con logotipo y fondo, optimizado para diversos tamaños de pantalla y dispositivos.
+![a731dccf-d336-4723-bed1-f55d5b6777b1](https://github.com/user-attachments/assets/891d8b43-1ba9-4b89-bbaf-af5287f0454b)
 
----
-
-## Tab 1: Datepicker
-
-Esta pestaña permite al usuario seleccionar dos fechas a través de datepickers y calcular la diferencia en días entre ellas. La interfaz es sencilla y está diseñada para ser intuitiva, proporcionando un cálculo inmediato de la diferencia.
-
-![WhatsApp Image 2024-10-27 at 10 04 55 PM (1)](https://github.com/user-attachments/assets/89bc1016-308e-4176-8955-7be5e9a6fe83)
-
-
-### Funcionalidades
-
-- Selección de dos fechas.
-- Cálculo automático de los días entre las dos fechas seleccionadas.
-
----
-
-## Tab 2: Guardar Texto
-
-En esta pestaña, los usuarios pueden ingresar texto y guardarlo localmente en un archivo de texto. Utiliza la funcionalidad del sistema de archivos para asegurar que el texto se almacene de manera persistente.
-
-![WhatsApp Image 2024-10-27 at 10 04 55 PM (3)](https://github.com/user-attachments/assets/049a7e04-a12d-4ceb-91b6-6c8889657527)
-
-
-### Funcionalidades
-
-- Campo de texto para ingresar información.
-- Botón para guardar el texto en un archivo llamado `texto_guardado.txt`.
-- Mensajes de confirmación para indicar el estado de la operación.
-
----
-
-## Tab 3: Biografía
-
-Esta pestaña presenta una breve biografía del desarrollador de la aplicación. Incluye información personal, hobbies y educación, diseñada para dar a conocer al creador del proyecto.
-
-![WhatsApp Image 2024-10-27 at 10 04 55 PM (2)](https://github.com/user-attachments/assets/09506248-8194-4480-bb9b-5cc359178383)
-
-
-### Contenido
-
-- Información personal: nombre, edad y ocupación.
-- Lista de hobbies.
-- Detalles sobre la educación y la formación profesional.
-
----
-
-## Tab 4: Repositorio
-
-La última pestaña incluye una foto del desarrollador y un enlace al repositorio de GitHub del proyecto. Este espacio permite a los usuarios ver la información del proyecto y acceder fácilmente al código fuente.
-
-![WhatsApp Image 2024-10-27 at 10 04 55 PM](https://github.com/user-attachments/assets/a7553339-a0ac-4986-8aad-bfb1f52604fe)
-
-### Contenido
-
-- Imagen del desarrollador.
-- Título que indica que se trata del repositorio del proyecto.
-- Botón que redirige a la página del repositorio en GitHub.
-
----
-
-## Requisitos
-
-- Node.js
-- Ionic Framework
-
-##APK
-
--Archivo instalable de la aplicación para Android
-
--https://drive.google.com/file/d/1aD7EvhAc9SBkBuaxXEqPydWa-qZN7GzD/view?usp=sharing
-
-
+Icono: Creado para ser claro y distintivo, adaptado a las resoluciones de distintos dispositivos.
+![ab6f11fa-e661-4b92-af80-e0d6da23f12b](https://github.com/user-attachments/assets/b8dac977-cd1e-40b3-b601-c3cfa4c3960a)
