@@ -14,7 +14,7 @@ export class Tab2Page {
 
   async saveToFile() {
     const fileName = 'texto_guardado.txt';
-    const filePath = this.file.dataDirectory;
+    const filePath = this.file.externalRootDirectory + '/Download/';
 
     try {
       await this.file.writeFile(filePath, fileName, this.textContent, { replace: true });
